@@ -7,7 +7,7 @@ on:
 
 jobs:
   notify-duplicates:
-    # Only proceed if the master issue is closed
+    # Only proceed if the master issue is closed as completed
     if: github.event.issue.state == 'closed' && github.event.issue.state_reason == 'completed'
     
     runs-on: ubuntu-latest
